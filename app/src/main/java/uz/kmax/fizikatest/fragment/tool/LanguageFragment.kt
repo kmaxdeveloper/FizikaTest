@@ -11,6 +11,8 @@ class LanguageFragment : BaseFragmentWC<FragmentLanguageBinding>(FragmentLanguag
     lateinit var sharedPref: SharedPref
     override fun onViewCreated() {
         sharedPref = SharedPref(requireContext())
+        val window = requireActivity().window
+        window.statusBarColor = this.resources.getColor(R.color.white)
 
         binding.selectLangEn.setOnClickListener {
             sharedPref.setLanguage(getString(R.string.lang_uz),requireContext())

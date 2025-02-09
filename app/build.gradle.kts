@@ -1,18 +1,19 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
     namespace = "uz.kmax.fizikatest"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "uz.kmax.fizikatest"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
-        versionName = "1.0.1"
+        versionName = "1.0.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -45,6 +46,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

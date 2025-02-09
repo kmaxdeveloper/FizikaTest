@@ -21,7 +21,7 @@ class TypeFilter {
         val mContentData = ArrayList<MenuContentData>()
         mContentData.addAll(unFilteredList2)
         for (i in 0 until mContentData.size){
-            if (mContentData[i].contentType == filterType && mContentData[i].contentVisibility == 1){
+            if (mContentData[i].contentVisibility == 1){
                 contentData.add(mContentData[i])
             }
         }

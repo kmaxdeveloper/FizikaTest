@@ -26,15 +26,16 @@ class TestFragment(private var testLocation: String, private var testCount : Int
     private val testLinearLayouts by lazy { ArrayList<LinearLayoutCompat>() }
     private val variantList by lazy { ArrayList<AppCompatTextView>() }
     private lateinit var testStatus: ArrayList<AppCompatTextView>
-    lateinit var firebaseManager: FirebaseManager
+    private lateinit var firebaseManager: FirebaseManager
     private var variantSelected = false
     private var testStatusCount = 0
     private var countTest = 0
     private var dialogEnd = DialogEndTest()
     private var dialogBack = DialogBack()
     private var adsManager = AdsManager()
-    lateinit var sharedPref: SharedPref
+    private lateinit var sharedPref: SharedPref
     private var language = "uz"
+    private var adsStatus = false
 
     override fun onViewCreated() {
         sharedPref = SharedPref(requireContext())
@@ -43,6 +44,9 @@ class TestFragment(private var testLocation: String, private var testCount : Int
         adsManager.initialize(requireContext())
         adsManager.loadInterstitialAd(requireContext(),getString(R.string.interstitialAdsUnitId))
         adsManager.loadBannerAd(binding.bannerAds)
+        adsManager.setOnAdLoadStatusListener {
+            adsStatus = it
+        }
         startTest(testLocation,testCount)
     }
 
@@ -50,6 +54,9 @@ class TestFragment(private var testLocation: String, private var testCount : Int
         super.onResume()
         adsManager.loadInterstitialAd(requireContext(),getString(R.string.interstitialAdsUnitId))
         adsManager.loadBannerAd(binding.bannerAds)
+        adsManager.setOnAdLoadStatusListener {
+            adsStatus = it
+        }
     }
 
     private fun startTest(testLocation: String,testCount: Int) {
@@ -93,14 +100,17 @@ class TestFragment(private var testLocation: String, private var testCount : Int
         variantList.add(binding.variantB)
         variantList.add(binding.variantC)
         variantList.add(binding.variantD)
-        variantList.shuffle()
 
         binding.testCountLayout[positionAnswer()].setBackgroundResource(R.drawable.style_position_answer)
 
         binding.back.setOnClickListener {
             dialogBack.show(requireContext())
             dialogBack.setOnBackYesListener {
-                ads()
+                if (adsStatus) {
+                    ads()
+                }else{
+                    startMainFragment(MenuFragment())
+                }
             }
         }
         binding.nextBtn.setOnClickListener {
@@ -109,10 +119,15 @@ class TestFragment(private var testLocation: String, private var testCount : Int
         binding.stopTest.setOnClickListener {
             dialogBack.show(requireContext())
             dialogBack.setOnBackYesListener {
-                ads()
+                if (adsStatus) {
+                    ads()
+                }else{
+                    startMainFragment(MenuFragment())
+                }
             }
         }
     }
+
     fun next() {
         if (variantSelected) {
             if (testManager.hasNextQuestion()) {
@@ -132,7 +147,11 @@ class TestFragment(private var testLocation: String, private var testCount : Int
                     testManager.wrongAnswerCount
                 )
                 dialogEnd.setOnOkBtnListener {
-                    ads()
+                    if (adsStatus) {
+                        ads()
+                    }else{
+                        startMainFragment(MenuFragment())
+                    }
                 }
                 dialogEnd.setOnReStartListener {
                     testManager.currentQuestionPosition = 0
@@ -210,10 +229,11 @@ class TestFragment(private var testLocation: String, private var testCount : Int
         }
     }
     private fun random(testCount: Int):Int{
-        val random = Random.nextInt(0,testCount)
+        val untilRandom = testCount + 1
+        val random = Random.nextInt(0,untilRandom)
         if (random == 0){
             return 1
-        }else if (random == testCount+1){
+        }else if (random == untilRandom){
             return random - 1
         }
         return random

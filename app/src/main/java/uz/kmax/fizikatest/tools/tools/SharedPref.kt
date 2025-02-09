@@ -13,7 +13,7 @@ class SharedPref(var context: Context) {
     private lateinit var editor: SharedPreferences.Editor
 
     init {
-        preferences = context.getSharedPreferences("TARIX_TEST", MODE_PRIVATE)
+        preferences = context.getSharedPreferences("FIZIKA_TEST", MODE_PRIVATE)
     }
 
     fun getLanguage() = preferences.getString("LANG", "uz")

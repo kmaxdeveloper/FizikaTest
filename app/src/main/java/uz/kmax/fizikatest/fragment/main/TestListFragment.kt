@@ -15,7 +15,7 @@ import uz.kmax.fizikatest.tools.manager.ConnectionManager
 import uz.kmax.fizikatest.tools.tools.SharedPref
 
 class TestListFragment : BaseFragmentWC<FragmentTestListBinding>(FragmentTestListBinding::inflate) {
-    val adapter by lazy { TestListAdapter() }
+    val adapter by lazy { TestListAdapter(requireContext()) }
     lateinit var firebaseManager: FirebaseManager
     private var connectionDialog = DialogConnection()
     private var adsManager = AdsManager()

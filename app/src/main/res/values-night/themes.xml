@@ -3,5 +3,23 @@
     <style name="Base.Theme.FizikaTest" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <!-- Remove this if not good !-->
+
+        <!-- Asosiy brend rangi (Ko‘k) -->
+        <item name="colorPrimary">#42A5F5</item>
+        <item name="colorPrimaryVariant">#1E88E5</item>
+        <!-- Ikkinchi darajali rang (Ko‘kimtir-Yashil) -->
+        <item name="colorSecondary">#26A69A</item>
+        <item name="colorSecondaryVariant">#00897B</item>
+        <!-- Fon va sirtlar -->
+        <item name="colorSurface">#1E1E1E</item>
+        <!-- Matn ranglari -->
+        <item name="colorOnPrimary">#E3F2FD</item>
+        <item name="colorOnSecondary">#E0F2F1</item>
+        <item name="colorOnBackground">#E0E0E0</item>
+        <item name="colorOnSurface">#BDBDBD</item>
+        <!-- Maxsus ranglar -->
+        <item name="colorError">#EF5350</item>
     </style>
 </resources>

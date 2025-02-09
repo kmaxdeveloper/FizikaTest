@@ -21,7 +21,7 @@ class ContentAdapter : BaseRecycleViewDU<ItemContentMenuBinding, MenuContentData
                 binding.contentName.text = item.contentName
                 binding.contentTitle.text = "${day}.${month}.${year}"
                 binding.contentNewOld.visibility = View.INVISIBLE
-                setDataToView(binding,"DayHistory")
+                setDataToView(binding,item.contentLocation)
                 binding.test.setOnClickListener {
                     sendMessage(item.contentType,item.contentLocation)
                 }

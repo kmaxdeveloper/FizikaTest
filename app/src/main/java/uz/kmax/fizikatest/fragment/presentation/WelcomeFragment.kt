@@ -16,6 +16,8 @@ class WelcomeFragment: BaseFragmentWC<FragmentWelcomeBinding>(FragmentWelcomeBin
     override fun onViewCreated() {
         shared = SharedPref(requireContext())
         adapter = WelcomeAdapter(requireContext())
+        val window = requireActivity().window
+        window.statusBarColor = this.resources.getColor(R.color.white)
         binding.viewPager.adapter = adapter
         TabLayoutMediator(binding.indicator, binding.viewPager) { tab, position -> }.attach()
         binding.start.setOnClickListener {

@@ -12,6 +12,9 @@ class SettingsFragment : BaseFragmentWC<FragmentSettingsBinding>(FragmentSetting
 
     override fun onViewCreated() {
         sharedPref = SharedPref(requireContext())
+        val window = requireActivity().window
+        window.statusBarColor = this.resources.getColor(R.color.appTheme)
+
         val language : String = sharedPref.getLanguage().toString()
         when(language){
             "uz" ->{

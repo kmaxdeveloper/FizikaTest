@@ -31,7 +31,7 @@ class UnitsFragment(private var location : String) : BaseFragmentWC<FragmentUnit
     }
 
     private fun getData(){
-        firebaseManager.observeList("Content/$language/Units/", UnitsData::class.java){
+        firebaseManager.observeList("Content/$language/$location", UnitsData::class.java){
             if (it != null) {
                 dayHistorySize = it.size
                 adapter.setItems(it)

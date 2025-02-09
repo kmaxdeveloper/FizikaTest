@@ -55,21 +55,29 @@ class TestManager() {
         return false
     }
 
+//    fun checkAnswer(answer: String) {
+//        if (answer == getAnswer()) {
+//            correctAnswerCount++
+//        } else {
+//            wrongAnswerCount++
+//        }
+//    }
+//
+//    fun checkAnswerBoolean(answer: String) : Boolean{
+//        return answer == getAnswer()
+//    }
+
+    fun answerWithPercent() = correctAnswerCount * 100 / getQuestionSize()
+
     fun checkAnswer(answer: String) {
-        if (answer == getAnswer()) {
+        if (answer.trim().lowercase() == getAnswer().trim().lowercase()) {
             correctAnswerCount++
         } else {
             wrongAnswerCount++
         }
     }
 
-    fun checkAnswerBoolean(answer: String) : Boolean{
-        if (answer == getAnswer()) {
-            return true
-        }
-        return false
+    fun checkAnswerBoolean(answer: String) : Boolean {
+        return answer.trim().lowercase() == getAnswer().trim().lowercase()
     }
-
-    fun answerWithPercent() = correctAnswerCount * 100 / getQuestionSize()
-
 }

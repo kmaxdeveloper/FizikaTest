@@ -5,9 +5,25 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
         <item name="android:textColorPrimary">@color/black</item>
         <item name="android:windowBackground">@color/white</item>
+
+        <!-- Added this code for customize light mode-->
+        <item name="colorPrimary">#1565C0</item>
+        <item name="colorPrimaryVariant">#0D47A1</item>
+        <!-- Ikkinchi darajali rang (Ko‘kimtir-Yashil) -->
+        <item name="colorSecondary">#00897B</item>
+        <item name="colorSecondaryVariant">#00695C</item>
+        <!-- Fon va sirtlar -->
+        <item name="colorSurface">#FFFFFF</item>
+        <!-- Matn ranglari -->
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnSecondary">#FFFFFF</item>
+        <item name="colorOnBackground">#212121</item>
+        <item name="colorOnSurface">#424242</item>
+        <!-- Maxsus ranglar -->
+        <item name="colorError">#D32F2F</item>
     </style>
 
-    <style name="Theme.TarixTest" parent="Base.Theme.FizikaTest"/>
+    <style name="Theme.FizikaTest" parent="Base.Theme.FizikaTest"/>
 
     <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
         <item name="cornerSize">50%</item>

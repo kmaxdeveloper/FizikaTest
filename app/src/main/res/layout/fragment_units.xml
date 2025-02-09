@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -28,7 +29,7 @@
             android:background="@color/whiteBlue"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:title="Kun Tarixi"/>
+            app:title="Fizik Birliklar"/>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
     <androidx.recyclerview.widget.RecyclerView
@@ -36,15 +37,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize"/>
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/setDateBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="16dp"
-        android:tint="@color/blue"
-        app:maxImageSize="30dp"
-        android:backgroundTint="@color/white_blue"
-        android:src="@drawable/calendar_24px"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

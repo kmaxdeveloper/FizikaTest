@@ -29,12 +29,12 @@ class SplashFragment : BaseFragmentWC<FragmentSplashBinding>(FragmentSplashBindi
         firebaseManager = FirebaseManager()
         shared = SharedPref(requireContext())
         val window = requireActivity().window
-        window.statusBarColor = this.resources.getColor(R.color.appTheme)
+        window.statusBarColor = this.resources.getColor(R.color.color_app)
 
         updateDialog.setOnUpdateNowListener {
             val intent = Intent(Intent.ACTION_VIEW).apply {
                 data = Uri.parse(
-                    "https://play.google.com/store/apps/details?id=uz.kmax.tarixtest")
+                    "https://play.google.com/store/apps/details?id=uz.kmax.fizikatest")
                 setPackage("com.android.vending")
             }
             startActivity(intent)
