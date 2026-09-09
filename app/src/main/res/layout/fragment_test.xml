@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="?attr/colorSurface"
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
@@ -12,9 +12,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        app:cardBackgroundColor="@color/white"
+        app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="16dp"
-        app:cardElevation="16dp">
+        app:cardElevation="2dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
@@ -28,13 +28,13 @@
                 android:layout_marginStart="10dp"
                 android:layout_gravity="center_vertical"/>
 
-            <androidx.appcompat.widget.AppCompatTextView
+            <uz.kmax.fizikatest.presentation.ui.view.MathView
                 android:id="@+id/question"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="16dp"
                 android:text="Savol"
-                android:textColor="@color/black"
+                android:textColor="?attr/colorOnSurface"
                 android:textSize="16sp" />
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.cardview.widget.CardView>
@@ -115,7 +115,7 @@
         android:layout_height="0dp"
         android:layout_margin="8dp"
         android:layout_weight="4"
-        app:cardBackgroundColor="@color/white"
+        app:cardBackgroundColor="?attr/colorSurface"
         app:cardCornerRadius="16dp"
         android:layout_marginBottom="10dp">
 
@@ -143,17 +143,17 @@
                     android:textStyle="bold"
                     android:layout_gravity="center_vertical"
                     android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/pre_hear_regular"
+                    android:textColor="?attr/colorOnSurface"
+                    android:fontFamily="@font/roboto"
                     android:layout_marginStart="5dp" />
 
-                <androidx.appcompat.widget.AppCompatTextView
+                <uz.kmax.fizikatest.presentation.ui.view.MathView
                     android:id="@+id/variantA"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:text="variant A"
-                    android:textColor="@color/black"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="16sp" />
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -175,17 +175,17 @@
                     android:textStyle="bold"
                     android:layout_gravity="center_vertical"
                     android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/pre_hear_regular"
+                    android:textColor="?attr/colorOnSurface"
+                    android:fontFamily="@font/roboto"
                     android:layout_marginStart="5dp"/>
 
-                <androidx.appcompat.widget.AppCompatTextView
+                <uz.kmax.fizikatest.presentation.ui.view.MathView
                     android:id="@+id/variantB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:text="variant A"
-                    android:textColor="@color/black"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="16sp" />
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -207,17 +207,17 @@
                     android:layout_gravity="center_vertical"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/pre_hear_regular"
+                    android:textColor="?attr/colorOnSurface"
+                    android:fontFamily="@font/roboto"
                     android:layout_marginStart="5dp" />
 
-                <androidx.appcompat.widget.AppCompatTextView
+                <uz.kmax.fizikatest.presentation.ui.view.MathView
                     android:id="@+id/variantC"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:text="variant A"
-                    android:textColor="@color/black"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="16sp" />
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -239,17 +239,17 @@
                     android:textStyle="bold"
                     android:layout_gravity="center_vertical"
                     android:textSize="18sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/pre_hear_regular"
+                    android:textColor="?attr/colorOnSurface"
+                    android:fontFamily="@font/roboto"
                     android:layout_marginStart="5dp" />
 
-                <androidx.appcompat.widget.AppCompatTextView
+                <uz.kmax.fizikatest.presentation.ui.view.MathView
                     android:id="@+id/variantD"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
                     android:text="variant D"
-                    android:textColor="@color/black"
+                    android:textColor="?attr/colorOnSurface"
                     android:textSize="16sp" />
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -268,8 +268,8 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="20dp"
         ads:adUnitId="@string/bannerAdsUnitId">
     </com.google.android.gms.ads.AdView>
 
@@ -282,44 +282,44 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/back"
             android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="4dp"
             android:layout_weight="1"
-            android:padding="10dp"
+            android:padding="8dp"
             android:drawableStart="@drawable/image_back_32px"
             android:background="@drawable/style_btn"
             android:text="@string/back"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="15sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/stopTest"
             android:layout_width="0dp"
-            android:layout_height="75dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
             android:layout_weight="1"
             android:padding="8dp"
             android:drawableEnd="@drawable/image_finish_32px"
             android:background="@drawable/style_btn"
             android:text="@string/finish"
-            android:textColor="@color/black"
+            android:textColor="?attr/colorOnSurface"
             android:textSize="14sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/nextBtn"
             android:layout_width="0dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
             android:layout_weight="1"
             android:background="@drawable/style_btn"
             android:text="@string/next"
             android:drawableEnd="@drawable/image_next_32px"
-            android:padding="10dp"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:padding="8dp"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="15sp" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

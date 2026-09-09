@@ -39,8 +39,8 @@
         android:text="Test Name"
         android:maxWidth="180dp"
         android:textSize="20sp"
-        android:fontFamily="@font/pre_hear_regular"
-        android:textColor="@color/black"
+        android:fontFamily="@font/roboto"
+        android:textColor="?attr/colorOnSurface"
         android:layout_marginTop="10dp"/>
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -56,7 +56,7 @@
             android:layout_height="wrap_content"
             android:text="Random"
             android:textSize="25sp"
-            android:fontFamily="@font/pre_hear_regular"
-            android:textColor="@color/black"/>
+            android:fontFamily="@font/roboto"
+            android:textColor="?attr/colorOnSurface"/>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>

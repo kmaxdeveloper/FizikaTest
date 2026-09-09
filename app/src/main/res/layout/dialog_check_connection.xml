@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="350dp"
         android:layout_height="500dp"
@@ -10,16 +13,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/style_btn">
-        <androidx.appcompat.widget.AppCompatImageView
+        android:background="@drawable/style_background">
+        <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/noConnection"
             android:layout_width="160dp"
             android:layout_height="170dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/text_noConnection"
-            app:srcCompat="@drawable/image_no_connection"/>
+            app:lottie_rawRes="@raw/lottie_animation_no_connection"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"/>
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text_noConnection"
             android:layout_width="wrap_content"
@@ -28,10 +34,10 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@id/linear"
-            android:text="@string/no_connection"
+            android:text="Ulanish yo'q"
             android:textSize="40sp"
-            android:fontFamily="@font/pre_hear_regular"
-            android:textColor="@color/black"/>
+            android:fontFamily="@font/roboto"
+            android:textColor="?attr/colorOnSurface"/>
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/linear"
@@ -49,13 +55,13 @@
                 android:id="@+id/tryAgain"
                 android:layout_width="170dp"
                 android:layout_height="70dp"
-                android:drawableTint="@color/black"
+                android:drawableTint="?attr/colorOnSurface"
                 android:drawableStart="@drawable/image_return2"
-                android:text="@string/dialog_return"
+                android:text="Qayta urinish"
                 android:textSize="20sp"
                 android:padding="20dp"
                 android:layout_margin="2dp"
-                android:textColor="@color/black"
+                android:textColor="?attr/colorOnSurface"
                 android:background="@drawable/style_btn"/>
 
             <androidx.appcompat.widget.AppCompatButton
@@ -65,10 +71,10 @@
                 android:background="@drawable/style_btn"
                 android:padding="20dp"
                 android:drawableStart="@drawable/image_exit"
-                android:text="@string/close"
-                android:textColor="@color/black"
+                android:text="Yopish"
+                android:textColor="?attr/colorOnSurface"
                 android:layout_margin="2dp"
-                android:drawableTint="@color/black"
+                android:drawableTint="?attr/colorOnSurface"
                 android:textSize="20sp"/>
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.constraintlayout.widget.ConstraintLayout>

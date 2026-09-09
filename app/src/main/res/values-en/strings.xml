@@ -1,27 +1,88 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Fizika Test</string>
     <string name="company_name">Kmax Programmers</string>
     <string name="company_name_with_symbol">Kmax Programmers ®</string>
-    <string name="interstitialAdsUnitId">ca-app-pub-4664801446868642/7837932967</string>
-    <string name="bannerAdsUnitId">ca-app-pub-4664801446868642/2560010967</string>
+
+    <!-- API / AD Keys -->
+    <string name="interstitialAdsUnitId">ca-app-pub-4664801446868642/3106782784</string>
+    <string name="bannerAdsUnitId">ca-app-pub-4664801446868642/1399222514</string>
+
+    <!-- Navigation -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="PrivacyPolicy">Privacy Policy</string>
-    <string name="AdminConnect">Admin bilan aloqa</string>
+    <string name="home">Home</string>
+    <string name="rating_app">Rate App</string>
+    <string name="connect_admin">Contact us</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- Admin Contact -->
     <string name="AdminGmail">komilcoder7@gmail.com</string>
     <string name="AdminTelegram">\@komildeveloper</string>
-    <string name="TestCompleted">Test Completed !</string>
-    <string name="CorrectAnswer">Correct answers : </string>
-    <string name="WrongAnswer">Wrong answers : </string>
+
+    <!-- Welcome / Onboarding -->
     <string name="welcome_1">Welcome !</string>
-    <string name="welcome_2">History tests</string>
-    <string name="welcome_3">Day History</string>
-    <string name="welcome_4">History test collection</string>
+    <string name="welcome_2">Topic-based tests</string>
+    <string name="welcome_3">Interesting content</string>
+    <string name="welcome_4">For applicants</string>
     <string name="welcome_5">Test your knowledge !</string>
+
+    <!-- Common UI -->
     <string name="message">Message</string>
     <string name="update">Update</string>
     <string name="update_available">New update is available. \n Update the software!</string>
     <string name="menuHome">Home</string>
     <string name="menuContent">Content</string>
     <string name="menuSettings">Settings</string>
+    <string name="menuArcade">Arcade</string>
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="finish">Finish</string>
+    <string name="warning">Warning !</string>
+    <string name="yes" tools:override="true">Yes</string>
+    <string name="no" tools:override="true">No</string>
+    <string name="ok" tools:override="true">OK</string>
+    <string name="close">Close</string>
+    <string name="exit">Exit</string>
+    <string name="title">Title</string>
+    <string name="about">About</string>
+    <string name="no_connection">No Connection</string>
+
+    <!-- Test UI -->
+    <string name="test">Test</string>
+    <string name="exampleTest">Physics Test</string>
+    <string name="TestCompleted">Test Completed !</string>
+    <string name="CorrectAnswer">Correct answers : </string>
+    <string name="WrongAnswer">Wrong answers : </string>
+    <string name="dialog_back_text">If you exit the test, your results will not be saved!</string>
+    <string name="dialog_back_text2">Do you want to exit the test?</string>
+    <string name="reStart">ReStart</string>
+    <string name="dialog_return">Return</string>
+    <string name="text_A">A) </string>
+    <string name="text_B">B) </string>
+    <string name="text_C">C) </string>
+    <string name="text_D">D) </string>
+    <string name="restoreHeart">You can watch an ad to restore hearts</string>
+    <string name="watchAd">Watch Ad</string>
+    <string name="attempsIsOver">Attempts is over!</string>
+    <string name="testSelectMode">Select Mode</string>
+    <string name="change_test_mode_hint">You can change this mode later in Settings</string>
+
+    <!-- Arcade / Games -->
+    <string name="arcadeTitle">Games</string>
+    <string name="arcadeSubtitle">Make learning physics fun!</string>
+    <string name="physics2048Title">Physics 2048</string>
+    <string name="physics2048Desc">Combine particles and reach the Universe!</string>
+    <string name="playGame">Play</string>
+    <string name="bestScore">Best Score</string>
+    <string name="currentScore">Current Score</string>
+    <string name="gameOver">Game Over!</string>
+    <string name="youWon">Congratulations!</string>
+    <string name="newGame">New Game</string>
+    <string name="reviveGame">Continue</string>
+    <string name="swipeToPlay">Swipe to play!</string>
+
+    <!-- Content -->
+    <string name="contentWarningInfo">This section will be added soon</string>
+    <string name="books">Textbooks</string>
 </resources>

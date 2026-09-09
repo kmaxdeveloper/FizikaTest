@@ -4,7 +4,7 @@
     android:id="@+id/PrivacyDrawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="?attr/colorSurface">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
@@ -28,7 +28,7 @@
                         style="@style/PrivacyPolicyTextBlockStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/about" />
+                        android:text="Ilova haqida" />
 
                     <Space
                         android:layout_width="match_parent"
@@ -37,8 +37,8 @@
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/policy1"
-                        android:textColor="@color/black"
+                        android:text="Maxfiylik siyosati"
+                        android:textColor="?attr/colorOnSurface"
                         android:textStyle="bold" />
 
                     <Space
@@ -49,7 +49,7 @@
                         style="@style/PrivacyPolicyTextBlockStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/policy2" />
+                        android:text="Sizning ma\'lumotlaringiz xavfsizligi biz uchun muhim." />
 
                     <Space
                         android:layout_width="match_parent"
@@ -59,171 +59,11 @@
                         style="@style/PrivacyPolicyTextStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/policy3" />
+                        android:text="Biz foydalanuvchilarning shaxsiy ma\'lumotlarini yig\'maymiz va ularni uchinchi shaxslarga bermaymiz." />
 
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="4dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextBlockStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy4" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy5" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="4dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextBlockStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy6" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy7" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="4dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextBlockStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy8" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy9" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="4dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextBlockStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy10" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy11" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="4dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextBlockStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy12" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy13" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="4dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextBlockStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy14" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy15" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="4dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextBlockStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy16" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy17" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="4dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextBlockStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy18" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="3dp" />
-
-                    <androidx.appcompat.widget.AppCompatTextView
-                        style="@style/PrivacyPolicyTextStyle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/policy19" />
-
-                    <Space
-                        android:layout_width="match_parent"
-                        android:layout_height="5dp" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         style="@style/PrivacyPolicyTextBlockStyle"

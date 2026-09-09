@@ -1,26 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.FizikaTest" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:textColorPrimary">@color/black</item>
-        <item name="android:windowBackground">@color/white</item>
-
-        <!-- Added this code for customize light mode-->
-        <item name="colorPrimary">#1565C0</item>
-        <item name="colorPrimaryVariant">#0D47A1</item>
-        <!-- Ikkinchi darajali rang (Ko‘kimtir-Yashil) -->
-        <item name="colorSecondary">#00897B</item>
-        <item name="colorSecondaryVariant">#00695C</item>
-        <!-- Fon va sirtlar -->
-        <item name="colorSurface">#FFFFFF</item>
-        <!-- Matn ranglari -->
-        <item name="colorOnPrimary">#FFFFFF</item>
-        <item name="colorOnSecondary">#FFFFFF</item>
-        <item name="colorOnBackground">#212121</item>
-        <item name="colorOnSurface">#424242</item>
-        <!-- Maxsus ranglar -->
-        <item name="colorError">#D32F2F</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:windowBackground">@color/phys_background_light</item>
+        <item name="android:textColorPrimary">@color/phys_on_surface_light</item>
+        <item name="android:statusBarColor">@color/phys_toolbar_light</item>
+        <item name="android:navigationBarColor">@color/phys_background_light</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="colorPrimary">@color/phys_primary_light</item>
+        <item name="colorOnPrimary">@color/phys_surface_light</item>
+        <item name="colorSurface">@color/phys_surface_light</item>
+        <item name="colorOnSurface">@color/phys_on_surface_light</item>
+        <item name="colorOutline">@color/phys_outline_light</item>
+        <item name="colorPrimaryContainer">@color/phys_toolbar_light</item>
+        <item name="colorSurfaceVariant">@color/phys_surface_variant_light</item>
     </style>
 
     <style name="Theme.FizikaTest" parent="Base.Theme.FizikaTest"/>
@@ -28,13 +23,19 @@
     <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
         <item name="cornerSize">50%</item>
     </style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize20Percent" parent="">
+        <item name="cornerSize">20%</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
     <style name="VariantStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:clickable">true</item>
         <item name="android:background">@drawable/style_test_default_answer</item>
         <item name="android:gravity">center</item>
-        <item name="android:onClick">click</item>
     </style>
     <style name="TestCountStyle">
         <item name="android:layout_width">11.5dp</item>
@@ -46,23 +47,23 @@
     <style name="PrivacyPolicyTextBlockStyle">
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
     <style name="PrivacyPolicyTextStyle">
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
 
     <style name="StyleTestCorrectAnswer">
         <item name="android:background">@drawable/style_test_correct_answer</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/correct_text_light</item>
     </style>
     <style name="StyleTestWrongAnswer">
-        <item name="android:background">@drawable/style_test_correct_answer</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/style_test_wrong_answer</item>
+        <item name="android:textColor">@color/wrong_text_light</item>
     </style>
     <style name="StyleTestDefaultAnswer">
-        <item name="android:background">@drawable/style_test_correct_answer</item>
-        <item name="android:textColor">@color/black</item>
+        <item name="android:background">@drawable/style_test_default_answer</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
 </resources>

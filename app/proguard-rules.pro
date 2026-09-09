@@ -19,3 +19,17 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+# Firebase Realtime Database
+-keepclassmembers class uz.kmax.fizikatest.domain.models.** {
+    *;
+}
+-keep class uz.kmax.fizikatest.domain.models.** {
+    *;
+}
+
+# Preserve @Keep annotations
+-keep @androidx.annotation.Keep class *
+-keepclassmembers class * {
+    @androidx.annotation.Keep *;
+}

@@ -1,27 +1,93 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Fizika Test</string>
     <string name="company_name">Kmax Programmers</string>
     <string name="company_name_with_symbol">Kmax Programmers ®</string>
-    <string name="interstitialAdsUnitId">ca-app-pub-4664801446868642/7837932967</string>
-    <string name="bannerAdsUnitId">ca-app-pub-4664801446868642/2560010967</string>
+
+    <!-- API / AD Keys -->
+    <string name="interstitialAdsUnitId">ca-app-pub-4664801446868642/3106782784</string>
+    <string name="bannerAdsUnitId">ca-app-pub-4664801446868642/1399222514</string>
+
+    <!-- Navigation -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="PrivacyPolicy">Privacy Policy</string>
-    <string name="AdminConnect">Admin bilan aloqa</string>
+    <string name="home">Bosh sahifa</string>
+    <string name="rating_app">Dasturni baholash</string>
+    <string name="connect_admin">Admin bilan aloqa</string>
+    <string name="privacy_policy">Maxfiylik siyosati</string>
+
+    <!-- Admin Contact -->
     <string name="AdminGmail">komilcoder7@gmail.com</string>
     <string name="AdminTelegram">\@komildeveloper</string>
+
+    <!-- Welcome / Onboarding -->
+    <string name="welcome_1">Hush Kelibsiz !</string>
+    <string name="welcome_1_desc" tools:ignore="MissingTranslation">Fizika olamiga xush kelibsiz! Biz bilan o\'rganish oson va qiziqarli.</string>
+    <string name="welcome_2">Mavzulashtirilgan testlar</string>
+    <string name="welcome_2_desc" tools:ignore="MissingTranslation">Fizika fanidan barcha mavzular bo\'yicha saralangan testlar to\'plami.</string>
+    <string name="welcome_3">Qiziqarli kontentlar</string>
+    <string name="welcome_3_desc" tools:ignore="MissingTranslation">Fizikaga oid qiziqarli faktlar va videolar bilan tanishing.</string>
+    <string name="welcome_4">Abturiyentlar uchun</string>
+    <string name="welcome_4_desc" tools:ignore="MissingTranslation">DTM standartidagi testlar bilan o\'zingizni imtihonga tayyorlang.</string>
+    <string name="welcome_5">O\'z bilimingizni sinab ko\'ring</string>
+    <string name="welcome_5_desc" tools:ignore="MissingTranslation">Bilimingizni sinash va natijalarni yaxshilash vaqti keldi.</string>
+
+    <!-- Common UI -->
+    <string name="message">Xabar</string>
+    <string name="update">Yangilanish</string>
+    <string name="update_available">Yangi yangilanish mavjud. \n Dasturni yangilang !</string>
+    <string name="menuHome">Asosiy</string>
+    <string name="menuContent">Kontent</string>
+    <string name="menuSettings">Sozlamalar</string>
+    <string name="menuArcade">O\'yinlar</string>
+    <string name="start">Boshlash</string>
+    <string name="next">Keyingisi</string>
+    <string name="back">Orqaga</string>
+    <string name="finish">Tugatish</string>
+    <string name="warning">Diqqat !</string>
+    <string name="yes" tools:override="true">Ha</string>
+    <string name="no" tools:override="true">Yo\'q</string>
+    <string name="ok" tools:override="true">Tushunarli</string>
+    <string name="close">Yopish</string>
+    <string name="exit">Chiqish</string>
+    <string name="title">Sarlavha</string>
+    <string name="about">Haqida</string>
+    <string name="no_connection">Ulanish yo\'q</string>
+
+    <!-- Test UI -->
+    <string name="test">Test</string>
+    <string name="exampleTest">Fizika Test</string>
     <string name="TestCompleted">Test Yakunlandi !</string>
     <string name="CorrectAnswer">To\'g\'ri javob : </string>
     <string name="WrongAnswer">Noto\'g\'ri javob : </string>
-    <string name="welcome_1">Hush Kelibsiz !</string>
-    <string name="welcome_2">Fizika Fanidan Mavzulashtirilgan testlar to\'plami</string>
-    <string name="welcome_3">Qiziqarli kontentlar</string>
-    <string name="welcome_4">Abturiyentlar uchun testlar to\'plami</string>
-    <string name="welcome_5">O\'z bilimingizni sinab ko\'ring</string>
-    <string name="message">Message</string>
-    <string name="update">Update</string>
-    <string name="update_available">Yangi yangilanish mavjud. \n Dasturni yangilang !</string>
-    <string name="menuHome">Home</string>
-    <string name="menuContent">Content</string>
-    <string name="menuSettings">Settings</string>
+    <string name="dialog_back_text">Testni rostdan ham to\'xtatmoqchimisiz ?</string>
+    <string name="dialog_back_text2">Sizning natijalaringiz saqlanmaydi !</string>
+    <string name="reStart">Qayta boshlash</string>
+    <string name="dialog_return">Qayta urinish</string>
+    <string name="text_A">A) </string>
+    <string name="text_B">B) </string>
+    <string name="text_C">C) </string>
+    <string name="text_D">D) </string>
+    <string name="restoreHeart">Urinishlarni tiklash uchun Reklamani tomosha qilishingiz mumkin</string>
+    <string name="watchAd">Reklama ko\'rish</string>
+    <string name="attempsIsOver">Urinishlar tugadi!</string>
+    <string name="testSelectMode">Rejimni tanlang</string>
+    <string name="change_test_mode_hint">Keyinchalik ushbu rejimni Sozlamalar bo\'limidan o\'zgartirishingiz mumkin</string>
+
+    <!-- Arcade / Games -->
+    <string name="arcadeTitle">O\'yinlar</string>
+    <string name="arcadeSubtitle">Fizika o\'rganishni qiziqarliroq qiling!</string>
+    <string name="physics2048Title">Fizika 2048</string>
+    <string name="physics2048Desc">Zarrachalarni birlashtiring va Koinotni zabt eting!</string>
+    <string name="playGame">O\'ynash</string>
+    <string name="bestScore">Eng yuqori ball</string>
+    <string name="currentScore">Hozirgi ball</string>
+    <string name="gameOver">O\'yin tugadi!</string>
+    <string name="youWon">Tabriklaymiz!</string>
+    <string name="newGame">Yangi o\'yin</string>
+    <string name="reviveGame">Davom ettirish</string>
+    <string name="swipeToPlay">Slayd qiling!</string>
+
+    <!-- Content -->
+    <string name="contentWarningInfo">Ushbu bo\'lim tez orada qo\'shiladi</string>
+    <string name="books">Darsliklar</string>
 </resources>
